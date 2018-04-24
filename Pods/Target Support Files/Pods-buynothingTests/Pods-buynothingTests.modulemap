@@ -1,0 +1,6 @@
+framework module Pods_buynothingTests {
+  umbrella header "Pods-buynothingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cy9-s8-Z0C">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Details-->
+        <scene sceneID="ipF-D6-1xj">
+            <objects>
+                <viewController title="Edit Details" hidesBottomBarWhenPushed="YES" id="Cy9-s8-Z0C" customClass="EditListingViewController" customModule="buynothing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="usW-m3-5xK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mwu-Ek-ie6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GOX-Kz-pJU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sbl-Gl-R9j">
+                                <rect key="frame" x="16" y="84" width="133" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="YXB-iI-uz3"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHf-eh-bxl" userLabel="DetailsBox">
+                                <rect key="frame" x="16" y="224" width="343" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qep-VH-6cD" userLabel="TitleBox">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title (Optional)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzX-f4-qfQ">
+                                                <rect key="frame" x="0.0" y="8" width="343" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fa7-dW-3YA" userLabel="DescBox">
+                                        <rect key="frame" x="0.0" y="93" width="343" height="238"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yc3-xt-Qk8">
+                                                <rect key="frame" x="0.0" y="51" width="343" height="167"/>
+                                                <color key="backgroundColor" white="0.94510754239999994" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="343" id="9Yy-GC-5H7"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description (Optional)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVO-uR-AWL">
+                                                <rect key="frame" x="0.0" y="8" width="343" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="qaL-gS-Fhv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Yc3-xt-Qk8" secondAttribute="bottom" constant="20" id="9o6-qm-h4k"/>
+                                            <constraint firstItem="Yc3-xt-Qk8" firstAttribute="trailing" secondItem="MVO-uR-AWL" secondAttribute="trailing" id="Hgt-JZ-toc"/>
+                                            <constraint firstItem="Yc3-xt-Qk8" firstAttribute="leading" secondItem="MVO-uR-AWL" secondAttribute="leading" id="QY7-Tv-gSj"/>
+                                            <constraint firstItem="Yc3-xt-Qk8" firstAttribute="leading" secondItem="fa7-dW-3YA" secondAttribute="leading" id="Zij-gK-faH"/>
+                                            <constraint firstItem="Yc3-xt-Qk8" firstAttribute="top" secondItem="fa7-dW-3YA" secondAttribute="top" constant="51" id="mYL-0b-2wp"/>
+                                            <constraint firstItem="MVO-uR-AWL" firstAttribute="top" secondItem="fa7-dW-3YA" secondAttribute="topMargin" id="zY5-YA-ZDa"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFd-Ke-s8V">
+                                        <rect key="frame" x="0.0" y="58" width="343" height="24"/>
+                                        <color key="backgroundColor" white="0.94800384400000004" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="4iU-Q6-Hod"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.94510754239999994" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fa7-dW-3YA" firstAttribute="centerX" secondItem="DHf-eh-bxl" secondAttribute="centerX" id="1SV-cQ-CbD"/>
+                                    <constraint firstItem="fa7-dW-3YA" firstAttribute="top" secondItem="qep-VH-6cD" secondAttribute="bottom" constant="43" id="4fA-Ii-7iR"/>
+                                    <constraint firstItem="qep-VH-6cD" firstAttribute="centerX" secondItem="DHf-eh-bxl" secondAttribute="centerX" id="64N-s2-uKE"/>
+                                    <constraint firstItem="eFd-Ke-s8V" firstAttribute="top" secondItem="qep-VH-6cD" secondAttribute="bottom" constant="8" symbolic="YES" id="9cM-Ta-xbc"/>
+                                    <constraint firstAttribute="trailing" secondItem="eFd-Ke-s8V" secondAttribute="trailing" id="ATz-K7-ZaO"/>
+                                    <constraint firstItem="fa7-dW-3YA" firstAttribute="trailing" secondItem="eFd-Ke-s8V" secondAttribute="trailing" id="DtN-pL-9Rf"/>
+                                    <constraint firstItem="fa7-dW-3YA" firstAttribute="top" secondItem="DHf-eh-bxl" secondAttribute="top" constant="93" id="FhZ-3O-Vtw"/>
+                                    <constraint firstAttribute="bottom" secondItem="fa7-dW-3YA" secondAttribute="bottom" constant="-11" id="SBE-rr-NN6"/>
+                                    <constraint firstItem="fa7-dW-3YA" firstAttribute="leading" secondItem="eFd-Ke-s8V" secondAttribute="leading" id="ZbQ-MP-XEF"/>
+                                    <constraint firstItem="fa7-dW-3YA" firstAttribute="leading" secondItem="qep-VH-6cD" secondAttribute="leading" id="a0X-qr-ERP"/>
+                                    <constraint firstItem="fa7-dW-3YA" firstAttribute="leading" secondItem="DHf-eh-bxl" secondAttribute="leading" id="eiE-Ra-oWM"/>
+                                    <constraint firstItem="eFd-Ke-s8V" firstAttribute="leading" secondItem="DHf-eh-bxl" secondAttribute="leading" id="rrF-TL-muD"/>
+                                    <constraint firstItem="qep-VH-6cD" firstAttribute="top" secondItem="DHf-eh-bxl" secondAttribute="top" id="urj-4g-fMU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6k5-nZ-A1C">
+                                <rect key="frame" x="117.5" y="555" width="140" height="38"/>
+                                <color key="backgroundColor" red="0.2784313725" green="0.51764705879999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="d82-AC-48l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Save changes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="Cy9-s8-Z0C" eventType="touchUpInside" id="kiL-mz-Cle"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DHf-eh-bxl" firstAttribute="leading" secondItem="GOX-Kz-pJU" secondAttribute="leadingMargin" id="0bd-ef-Adk"/>
+                            <constraint firstItem="DHf-eh-bxl" firstAttribute="leading" secondItem="sbl-Gl-R9j" secondAttribute="leading" id="A8R-4h-YWV"/>
+                            <constraint firstItem="DHf-eh-bxl" firstAttribute="top" secondItem="GOX-Kz-pJU" secondAttribute="top" constant="224" id="AnE-6j-IVq"/>
+                            <constraint firstItem="DHf-eh-bxl" firstAttribute="centerX" secondItem="6k5-nZ-A1C" secondAttribute="centerX" id="Gmu-4e-wqe"/>
+                            <constraint firstItem="DHf-eh-bxl" firstAttribute="top" secondItem="sbl-Gl-R9j" secondAttribute="bottom" constant="8" symbolic="YES" id="bSy-Go-jIn"/>
+                            <constraint firstItem="Mwu-Ek-ie6" firstAttribute="top" secondItem="6k5-nZ-A1C" secondAttribute="bottom" constant="30" id="eLf-b0-Eoz"/>
+                            <constraint firstItem="6k5-nZ-A1C" firstAttribute="top" secondItem="DHf-eh-bxl" secondAttribute="bottom" constant="11" id="i9v-X7-m69"/>
+                            <constraint firstItem="sbl-Gl-R9j" firstAttribute="top" secondItem="usW-m3-5xK" secondAttribute="bottom" constant="20" id="vLo-KG-9nC"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </simulatedNavigationBarMetrics>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="listingDescription" destination="Yc3-xt-Qk8" id="5GN-EE-NpX"/>
+                        <outlet property="listingImage" destination="sbl-Gl-R9j" id="4H1-Ou-bcH"/>
+                        <outlet property="listingTitle" destination="eFd-Ke-s8V" id="bXO-uh-40e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZT-EU-3qe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3261.5999999999999" y="257.72113943028489"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+</document>

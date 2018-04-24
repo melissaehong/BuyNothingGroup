@@ -1,0 +1,63 @@
+disabled_rules:
+opt_in_rules:
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - empty_count
+  - empty_count
+  - explicit_init
+  - first_where
+  - force_unwrapping
+  - mark
+  - missing_docs
+  - missing_docs
+  - nimble_operator
+  - number_separator
+  - object_literal
+  - operator_usage_whitespace
+  - overridden_super_call
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - sorted_imports
+  - switch_case_on_newline
+  - vertical_whitespace
+
+included:
+excluded:
+  - Carthage
+  - Pods
+  - Source/ExcludedFolder
+  - Source/ExcludedFile.swift
+  - GitHub/AppDelegate.swift
+force_cast: warning
+force_try: warning
+line_length:
+  warning: 120
+  error: 150
+type_body_length:
+  warning: 300
+  error: 400
+file_length:
+  warning: 500
+  error: 1200
+type_name:
+  min_length:
+    warning: 4
+  max_length:
+    warning: 40
+    error: 50
+  excluded: iPhone
+vertical_whitespace:
+  severity: error
+private_outlet:
+  severity: error
+mark:
+  severity: error
+variable_name:
+  min_length:
+    error: 3
+  excluded:
+    - id
+    - URL
+    - GlobalAPIKey
+reporter: "emoji"
